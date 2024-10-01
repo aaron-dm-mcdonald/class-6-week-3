@@ -3,7 +3,7 @@
 ## Info
 
 - Group Name: Dunder Mifflin Cloud Company
-- Class Leader: Aaron, Regional Manager of DMCC- Zion
+- Class Leader: Aaron, Regional Manager of DMCC- Zion Branch
 - Nana Scripts Location: 
 - Members of group: 
     - FORMAT: Facebook Profile (Nickname if applicable, Class)
