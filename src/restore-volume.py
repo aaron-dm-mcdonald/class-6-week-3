@@ -1,3 +1,5 @@
+# restore-volume.py
+#------------------------------------------------------------------
 from operator import itemgetter
 import boto3
 
@@ -16,6 +18,11 @@ ec2_resource = boto3.resource(
 
 # Specify the instance ID
 instance_id = 'i-02078856a347e1079'
+
+
+
+#------------------------------------------------------------------
+
 
 # Describe volumes attached to the specified instance
 volumes = ec2_client.describe_volumes(
@@ -41,12 +48,20 @@ snapshots = ec2_client.describe_snapshots(
     ]
 )
 
+
+#------------------------------------------------------------------
+
+
 # Sort snapshots by StartTime in descending order and get the latest snapshot
 latest_snapshot = sorted(
     snapshots['Snapshots'],
     key=itemgetter('StartTime'),
     reverse=True
 )[0]
+
+
+#------------------------------------------------------------------
+
 
 # Create a new volume from the latest snapshot
 new_volume = ec2_client.create_volume(
@@ -64,6 +79,10 @@ new_volume = ec2_client.create_volume(
         },
     ]
 )
+
+
+#------------------------------------------------------------------
+
 
 # Loop until the new volume becomes available
 while True:

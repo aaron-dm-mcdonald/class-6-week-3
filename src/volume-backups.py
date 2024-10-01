@@ -1,6 +1,9 @@
+# volume-backups.py
+#------------------------------------------------------------------
 import boto3
 import schedule
 
+# Boilderplate 
 # Define the AWS region
 region = 'us-east-2'
 
@@ -9,6 +12,10 @@ ec2_client = boto3.client(
     'ec2',
     region_name=region
 )
+
+
+#------------------------------------------------------------------
+
 
 # Describe volumes with the tag 'Name' set to 'prod'
 volumes = ec2_client.describe_volumes(
@@ -20,10 +27,10 @@ volumes = ec2_client.describe_volumes(
     ]
 )
 
-
+#------------------------------------------------------------------
 # Uncomment the following line to print the volumes for debugging
 # print(volumes['Volumes'])
-
+#------------------------------------------------------------------
 
 def create_volume_snapshots():
     # Iterate over each volume
@@ -39,6 +46,9 @@ def create_volume_snapshots():
             # Handle any exceptions that occur
             print(f"An error occurred: {e}")
             pass
+
+#------------------------------------------------------------------
+
 
 # Schedule the snapshot creation to run every 5 days
 schedule.every(5).days.do(create_volume_snapshots)
