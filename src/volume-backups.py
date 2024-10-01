@@ -15,9 +15,7 @@ volumes = ec2_client.describe_volumes(
     Filters=[
         {
             'Name': 'tag:Name',
-            "Values": [
-                "prod"
-            ]
+            "Values": ["prod"]
         }
     ]
 )

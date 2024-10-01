@@ -46,7 +46,7 @@ for volume in volumes['Volumes']:
     # Uncomment the following lines to print snapshot start times before and after sorting
     # for snapshot in snapshots['Snapshots']:
     #     print(snapshot['StartTime'])
-    #
+    
     # print("-" * 50)
     # for snapshot in sorted_by_date:
     #     print(snapshot['StartTime'])
