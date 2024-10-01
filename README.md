@@ -4,7 +4,7 @@
 
 - Group Name: Dunder Mifflin Cloud Company
 - Class Leader: Aaron, Regional Manager of DMCC- Zion Branch
-- Nana Scripts Location: 
+- Nana Scripts Location: [Submissions](https://github.com/aaron-dm-mcdonald/class-6-week-3/tree/main/src)
 - Members of group: 
     - FORMAT: Facebook Profile (Nickname if applicable, Class)
     - Alexander Shaw (AKA Alex, Class 5.5)
@@ -34,8 +34,8 @@
 5) automate away
 
 ### Intro to Python
-
-
+Some basic python scripts here: 
+[Python Sample Scripts](https://github.com/aaron-dm-mcdonald/class-6-week-3/tree/main/sample)
 
 
 ## Project Structure
@@ -47,10 +47,11 @@
         - push.sh
         - tree.py
     - src/
+        - boto3-install.sh
         - cleanup-snapshot.py
         - restore-volume.py
         - volume-backups.py
-    - test/
+    - sample/
         - auth-test-sample.py
         - data-sample.py
         - import-sample.py
