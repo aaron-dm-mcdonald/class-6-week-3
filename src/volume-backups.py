@@ -20,8 +20,10 @@ volumes = ec2_client.describe_volumes(
     ]
 )
 
+
 # Uncomment the following line to print the volumes for debugging
 # print(volumes['Volumes'])
+
 
 def create_volume_snapshots():
     # Iterate over each volume
