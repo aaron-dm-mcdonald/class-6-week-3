@@ -9,6 +9,7 @@
     - FORMAT: Facebook Profile (Nickname if applicable, Class)
     - Alexander Shaw (AKA Alex, Class 5.5)
     - Lynell Ghant (AKA Jody, Class 5.5)
+    - Charles Moreland (Class 5.5)
     - Ted Clayton (Class 5.5)
     - Terry Adams (Class 6)
     - Kendrick Dankyi (Class 6)
