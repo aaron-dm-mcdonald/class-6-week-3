@@ -5,7 +5,7 @@
 # Function to greet a user
 def greet(name):
   
-    # This function greets the person passed in as a parameter.
+    # This function gets its argument by passing it in as a parameter.
 
     # Print a greeting message
     print(f"Hello, {name}!")
@@ -16,10 +16,10 @@ def greet(name):
 # Function to add two numbers
 def add_numbers(a, b):
    
-    # This function returns the sum of two numbers.
-    
+    # This function has a return value.
+    c = a + b
     # Calculate the sum of a and b
-    return a + b
+    return c
 
 #------------------------------------------------------------------
 
@@ -45,18 +45,21 @@ def print_fruits(*fruits):
     for fruit in fruits:
         print(f"- {fruit}")
 
+#------------------------------------------------------------------
+
 # Calling the functions
-# Greet a user named Alice
+
+# Passes the argument "Alice" as a parameter
 greet("Alice")
 
-# Calculate and print the sum of 5 and 3
+# Pass a=b, b=3 as parameters with return value
 print(f"Sum: {add_numbers(5, 3)}")
 
-# Describe a pet named Buddy, which is a dog by default
+# Describe a pet, with a default value
 describe_pet("Buddy")
 
-# Describe a pet named Whiskers, which is a cat
+# Describe a pet named which overrides the default value 
 describe_pet("Whiskers", "cat")
 
-# Print a list of fruits
+# Print a list of fruits with muliple arguments being passed to the same parameter
 print_fruits("Apple", "Banana", "Cherry")
