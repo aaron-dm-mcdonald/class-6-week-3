@@ -36,9 +36,9 @@ def describe_pet(pet_name, animal_type='dog'):
 
 # Function using *args to accept multiple arguments
 def print_fruits(*fruits):
-    """
-    This function prints all the fruits passed as arguments.
-    """
+   
+    # This function prints all the fruits passed as arguments.
+   
     # Print a header
     print("Fruits:")
     # Loop through each fruit in the arguments and print it
