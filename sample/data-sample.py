@@ -25,7 +25,7 @@ print("\nList - Fruits:", fruits)
 # Accessing elements in a list by index (starting from 0)
 print("List - First fruit:", fruits[0])  # First element
 print("List - Last fruit:", fruits[2])    # Last element by index
-print("List - Last fruit:", fruits[-1])    # Last element using negative indexing
+print("List - Last fruit:", fruits[-1])    # Last element using negative indexing (going backwards in the list)
 
 
 #------------------------------------------------------------------
@@ -74,6 +74,7 @@ adv_dict = {
         "zip": "10001"                        # Key "zip" in the nested dictionary
     }
 }
+
 # Print the entire advanced dictionary
 print("\nAdvanced Dictionary - Nested dictionary:", adv_dict)
 # Accessing the list of hobbies within the nested dictionary
