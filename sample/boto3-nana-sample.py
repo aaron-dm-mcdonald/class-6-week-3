@@ -1,4 +1,4 @@
-# auth-test-sample.py
+# sample/boto3-nana-sample.py
 # Import the boto3 library, AWS SDK for Python
 # Note: Must have CLI utility configured for authentication 
 #------------------------------------------------------------------
@@ -13,6 +13,7 @@ ec2_client = boto3.client('ec2', region_name="us-east-2")
 # Here we use Boto3's describe_volume's function and the ec2_client to retrieve data from our volumes
 # The retrieved data is stored in 'volumes' (as a dictionary)
 volumes = ec2_client.describe_volumes()
+
 
 # Print the list of volumes
 # Since volumes is a 'dictionary' (ordered list with key-value pairs) we use the key 'Volumes' to specify we want data about the volumes. 

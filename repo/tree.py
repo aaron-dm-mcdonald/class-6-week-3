@@ -7,7 +7,7 @@ import os
 
 
 def load_gitignore():
-    """Load the .gitignore file and return a set of patterns to ignore."""
+    # Load the .gitignore file and return a set of patterns to ignore.
     ignore_patterns = set()
     if os.path.exists('.gitignore'):
         with open('.gitignore', 'r') as f:
