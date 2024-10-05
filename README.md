@@ -40,6 +40,7 @@ Some basic python scripts here:
 [Python Sample Scripts](https://github.com/aaron-dm-mcdonald/class-6-week-3/tree/main/sample)
 
 
+
 ## Project Structure
 
 - ./
@@ -48,13 +49,17 @@ Some basic python scripts here:
     - repo/
         - push.sh
         - tree.py
+    - sample/
+        - boto3-nana-sample.py
+        - data-sample.py
+        - functions-sample.py
+        - import-sample.py
+        - logic-sample.py
     - src/
-        - boto3-install.sh
         - cleanup-snapshot.py
         - restore-volume.py
         - volume-backups.py
-    - sample/
-        - auth-test-sample.py
-        - data-sample.py
-        - import-sample.py
-        - logic-sample.py
+    - test/
+        - boto3-auth-test.py
+        - entry-point.sh
+        - py-check.sh
