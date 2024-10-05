@@ -120,16 +120,14 @@ check_and_install_packages() {
     done
 }
 
-# Main installation function based on OS type
-install() {
-    local os_type="$1"
-    local python_cmd="python"
-    local pip_cmd="pip"
+# Main installation function
+main() {
+    # Get Python and pip commands from arguments
+    local python_cmd="$1"
+    local pip_cmd="$2"
 
-    if [[ "$os_type" != "windows" ]]; then
-        python_cmd="python3"
-        pip_cmd="pip3"
-    fi
+    # Debugging output
+    echo "Using commands: Python = $python_cmd, Pip = $pip_cmd"
 
     # Check Python and pip
     check_python_and_pip "$python_cmd" "$pip_cmd"
@@ -152,11 +150,5 @@ install() {
     echo "All checks and installations completed successfully!"
 }
 
-# Main script execution
-if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
-    echo "Detected Windows (assuming Git Bash)."
-    install "windows"
-else
-    echo "Detected Unix-like OS (assuming macOS or similar)."
-    install "unix"
-fi
+# Execute the main function with arguments
+main "$@"
