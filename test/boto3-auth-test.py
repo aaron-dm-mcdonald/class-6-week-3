@@ -9,17 +9,6 @@ from botocore.exceptions import NoCredentialsError, PartialCredentialsError  # I
 
 #------------------------------------------------------------------
 
-# sample/boto3-auth-test.py
-# This script demonstrates how to authenticate with AWS using the boto3 library.
-# Before running this script, make sure you have the AWS CLI configured for authentication.
-
-#------------------------------------------------------------------
-
-import boto3  # Import the boto3 library, the AWS SDK for Python
-from botocore.exceptions import NoCredentialsError, PartialCredentialsError  # Import specific exceptions for handling errors
-
-#------------------------------------------------------------------
-
 # Create a session using your AWS credentials from the configured profile
 session = boto3.Session()
 
